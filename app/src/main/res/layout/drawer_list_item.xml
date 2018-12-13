@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/llheight_settings">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/llheight_25dp"
+        android:layout_height="@dimen/llheight_25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/rightmarginimage15dp"
+        android:layout_marginRight="@dimen/txtmargin_left"
+        android:contentDescription="@string/image"
+        android:src="@drawable/header_logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/icon"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeightSmall"
+        android:paddingRight="@dimen/llheight_settings40dp"
+        android:textAppearance="?android:textAppearanceListItemSmall"
+        android:textColor="@color/list_item_title"
+        android:textSize="@dimen/txtsize13dp" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="@dimen/llheight_25dp"
+        android:layout_height="@dimen/llheight_25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/counter_bg"
+        android:gravity="center"
+        android:textColor="@color/counter_text_color"
+        android:textSize="@dimen/txtsize13dp" />
+</RelativeLayout>

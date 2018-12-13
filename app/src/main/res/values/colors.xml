@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00aff0</color>
+    <color name="colorPrimaryDark">#0b97cc</color>
+    <color name="colorPrimaryDarkToo">#068abc</color>
+    <color name="colorAccent">@color/colorPrimaryDark</color>
+
+    <color name="actionbar">#00aff0</color>
+    <color name="awaitingCus">#ffd2212b</color>
+    <color name="black">#ff717171</color>
+    <color name="blackCalender">#ff707070</color>
+    <color name="blacknew">#ff000000</color>
+    <color name="blue">#ff345190</color>
+    <color name="btnback">#ff656565</color>
+    <color name="btngreen">#00aff0</color>
+    <color name="calender">#ff666666</color>
+    <color name="calender1">#ffe6e6e6</color>
+    <color name="calenderinner">#ff999999</color>
+    <color name="calin">#ffd1d3d2</color>
+    <color name="circle_border">#ffbcbcbc</color>
+    <color name="clanderheader">#ff589963</color>
+    <color name="confirmbtn">#fffb9516</color>
+    <color name="counter_text_bg">#ff626262</color>
+    <color name="counter_text_color">#ffc5c4c4</color>
+    <color name="emailto">#ff1096ef</color>
+    <color name="fblue">#ff345190</color>
+    <color name="gred">#ffe74100</color>
+    <color name="green">#ff216119</color>
+    <color name="greenTxt">#ff70bf42</color>
+    <color name="latest_body_text_grey">#ff717171</color>
+    <color name="latest_gray">#ff666666</color>
+    <color name="latest_green">#ff70bf42</color>
+    <color name="latest_orange">#fffa9100</color>
+    <color name="latest_red">#ffff0000</color>
+    <color name="lightgray">#ffe7e7e7</color>
+    <color name="lightgray02">#ffbfbfbf</color>
+    <color name="linkcolor">#ff31b6e7</color>
+    <color name="list_background">#ff303030</color>
+    <color name="list_background_pressed">#ff992416</color>
+    <color name="list_divider">#ff272727</color>
+    <color name="list_item_title">#ffffffff</color>
+    <color name="noti_back">#fff8f8f8</color>
+    <color name="notificationback">#ffb4d7ad</color>
+    <color name="notificationborder">#00aff0</color>
+    <color name="orrange">#ffe33d1b</color>
+    <color name="ratingcolor">#fffbbe66</color>
+    <color name="red">#ffff0000</color>
+    <color name="servicelist">#ff70bf42</color>
+    <color name="sharebtn">#ff2d7add</color>
+    <color name="subcatcolor">#ff323232</color>
+    <color name="tblue">#ff21cbe7</color>
+    <color name="transparent">#ffbf0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_sel">#ff8e9696</color>
+    <color name="yellow">#fffb9516</color>
+
+</resources>

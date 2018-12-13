@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <VideoView
+        android:id="@id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutHead"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageVie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/header_logo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="2.3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mainHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin7dp"
+                    android:layout_marginRight="@dimen/margin7dp"
+                    android:text="@string/mainheader"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtsize_home" />
+
+                <TextView
+                    android:id="@+id/mainHeader1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin7dp"
+                    android:layout_marginRight="@dimen/margin7dp"
+                    android:text="@string/mainheader1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtsize_home" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/signUpWithEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/imgview_heightwidth"
+                android:layout_marginRight="@dimen/imgview_heightwidth"
+                android:layout_weight="1.2"
+                android:background="@color/latest_orange"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/imgview_width25"
+                    android:layout_height="@dimen/txtsize_book2"
+                    android:layout_marginLeft="@dimen/leftmargin"
+                    android:background="@drawable/mail_main" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/txtsize_book"
+                    android:background="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/emailLoginUserNamed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/txtsize13dp"
+                    android:text="@string/sig_main"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/txtsize_book" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_image1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="0.3"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/signUpWithFb"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/imgview_heightwidth"
+                android:layout_marginRight="@dimen/imgview_heightwidth"
+                android:layout_weight="1.2"
+                android:background="#ff345190"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/txtmargin_left"
+                    android:layout_height="@dimen/imgview_width25"
+                    android:layout_marginLeft="@dimen/txtsize19dp"
+                    android:background="@drawable/facebook_home" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/txtsize22dp"
+                    android:background="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/emailLoginUserNamek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/txtsize13dp"
+                    android:text="@string/sig_face"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/txtsize_book" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/signUpWithGooglePlus"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/imgview_heightwidth"
+                android:layout_marginRight="@dimen/imgview_heightwidth"
+                android:layout_weight="1.2"
+                android:background="@color/latest_red"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/imgview_width25"
+                    android:layout_height="@dimen/txtsize_book2"
+                    android:layout_marginLeft="@dimen/leftmargin"
+                    android:background="@drawable/google_main" />
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/txtsize_book"
+                    android:background="#ffffffff" />
+
+                <TextView
+                    android:id="@+id/emailLoginUserggNamegh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/txtsize13dp"
+                    android:text="@string/sig_google"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/txtsize_book" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="2.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/emailLoginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="@dimen/llheight_settings"
+                android:layout_marginRight="@dimen/llheight_settings"
+                android:layout_weight="1.2"
+                android:background="@drawable/round_border_buttun"
+                android:gravity="center">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="@string/lemail"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

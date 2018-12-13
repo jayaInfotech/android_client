@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_border_buttun"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_2sdp"
+    android:padding="@dimen/_3sdp">
+
+    <TextView
+        android:id="@+id/serviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/subserviceImage"
+        android:layout_marginBottom="@dimen/txtsize14dp"
+        android:layout_marginLeft="@dimen/txtheader_all"
+        android:layout_toRightOf="@+id/subserviceImage"
+        android:text="TextView"
+        android:textSize="@dimen/txtsize_setting20dp"
+        android:visibility="gone" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        android:id="@+id/serviceImg"
+        android:layout_width="@dimen/llheight70dp"
+        android:layout_height="@dimen/llheight_settings40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2.0dip" />
+
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/leftmargin_imgview"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+</LinearLayout>

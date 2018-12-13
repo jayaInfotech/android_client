@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/hamburger"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/drawerll"
+        android:layout_width="@dimen/customer_home240dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="#ff000000"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/drawer"
+            android:layout_width="@dimen/customer_home240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:textColor="@color/blacknew">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView_round"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/upload"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/rightmarginimage15dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff000000"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

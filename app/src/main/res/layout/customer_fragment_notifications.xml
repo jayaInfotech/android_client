@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutTopUpMainHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/llheight_settings40dp"
+        android:layout_margin="@dimen/leftmargin_imgview"
+        android:background="@color/latest_green"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutTopUpHeader"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_left5">
+
+            <TextView
+                android:id="@+id/notificationHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2.0dip"
+                android:text="@string/notificationheader"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTopUpBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="3.0dip">
+
+            <Button
+                android:id="@+id/topupBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/btngreen"
+                android:text="@string/topupbtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blankNotificationLayoutCus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/txtsize_setting20dp"
+            android:layout_height="@dimen/txtsize_setting20dp"
+            android:background="@drawable/notification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="@string/blankNoti"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/custNotificationScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="10.0"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/customerNotificationLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/leftmargin_imgview"
+                android:layout_marginRight="@dimen/leftmargin_imgview"
+                android:layout_marginTop="2.0dip"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

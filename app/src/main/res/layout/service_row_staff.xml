@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="@drawable/round_border_buttun"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:padding="@dimen/_2sdp">
+
+    <TextView
+        android:id="@+id/serviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/subserviceImage"
+        android:layout_marginBottom="14.0dip"
+        android:layout_marginLeft="@dimen/txtheader_all"
+        android:layout_toRightOf="@+id/subserviceImage"
+        android:text="TextView"
+        android:textSize="@dimen/txtsize_setting20dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/serviceImg"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2.0dip" />
+
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+</LinearLayout>

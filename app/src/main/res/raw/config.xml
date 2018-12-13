@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright © EasySpa Pte Ltd, 2014 – 2015 -->
+<webserviceConfig>
+  <seviceIP>http://180.151.95.11/EasySpaservices/</seviceIP>
+  <seviceURL>http://tempuri.org/</seviceURL>
+  <newSeviceURL>http://webservices.easyspa.org/</newSeviceURL>
+  <!--<newSeviceURL>http://54.243.236.69/EasySpaServiceStaging/</newSeviceURL>-->
+    <!--<newSeviceURL>http://54.243.236.69/EasySpaServiceDev/</newSeviceURL>-->
+  <analyticTrackingId>UA-57015638-2</analyticTrackingId>
+  <dispatchPeriod>1800</dispatchPeriod>
+    <!-- <newSeviceURL>UA-64687183-1</newSeviceURL>-->
+
+</webserviceConfig>

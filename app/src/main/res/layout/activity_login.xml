@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <VideoView
+        android:id="@id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:onClick="onClick"
+            android:id="@+id/layoutHead"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:tint="@color/colorPrimary"
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageVie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/header_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lemail"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize22dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/imgview_heightwidth"
+            android:layout_marginRight="@dimen/imgview_heightwidth"
+            android:layout_weight="1.2"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imgview_width25"
+                android:layout_height="@dimen/llheight_23dp"
+                android:layout_marginLeft="@dimen/leftmargin"
+                android:background="@drawable/username_main" />
+
+            <EditText
+                android:id="@+id/emailLoginUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txtsize_setting20dp"
+                android:background="@null"
+                android:hint="@string/cus_emailadd_hint"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/imgview_heightwidth"
+            android:layout_marginRight="@dimen/imgview_heightwidth"
+            android:layout_weight="1.2"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imgview_width25"
+                android:layout_height="@dimen/txtheader_all"
+                android:layout_marginLeft="@dimen/leftmargin"
+                android:background="@drawable/password_mail" />
+
+            <EditText
+                android:id="@+id/emailLoginPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txtsize_setting20dp"
+                android:background="@null"
+                android:hint="@string/cus_password_hint"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/imgview_heightwidth"
+            android:layout_marginRight="@dimen/imgview_heightwidth"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/emailLoginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/latest_orange"
+                android:text="@string/loginbtn"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/forgetPassTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginWithFb"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/imgview_heightwidth"
+            android:layout_marginRight="@dimen/imgview_heightwidth"
+            android:layout_weight="1.2"
+            android:background="#ff345190"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/txtmargin_left"
+                android:layout_height="@dimen/imgview_width25"
+                android:layout_marginLeft="@dimen/txtsize19dp"
+                android:background="@drawable/facebook_home" />
+
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/txtsize22dp"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:id="@+id/emailLoginUserNamed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txtsize_15dp"
+                android:text="@string/fblogin"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/header_image1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/loginWithGoogle"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/imgview_heightwidth"
+            android:layout_marginRight="@dimen/imgview_heightwidth"
+            android:layout_weight="1.2"
+            android:background="@color/latest_red"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imgview_width25"
+                android:layout_height="@dimen/txtsize_book2"
+                android:layout_marginLeft="@dimen/leftmargin"
+                android:background="@drawable/google_main" />
+
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/txtsize_book"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:id="@+id/emailLoginUserNamek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/img_heightwidth16dp"
+                android:text="@string/gmlogin"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/loginWithTwitter"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="@dimen/llheight_settings40dp"
+            android:layout_marginRight="@dimen/llheight_settings40dp"
+            android:layout_weight="1.2"
+            android:background="#ff1096ef"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/imgview_width25"
+                android:layout_height="@dimen/txtsize_book2"
+                android:layout_marginLeft="@dimen/leftmargin"
+                android:background="@drawable/twitter_main" />
+
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/txtsize_book"
+                android:background="#ffffffff" />
+
+            <TextView
+                android:id="@+id/emailLoginUserggNamegh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/img_heightwidth16dp"
+                android:text="@string/twlogin"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="bottom|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/forgetPassTxtgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dontacc"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/signUpBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sing"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/txtsize_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</RelativeLayout>

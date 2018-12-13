@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ef_white"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:id="@+id/exp_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:childDivider="#ff000000"
+        android:groupIndicator="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/serviceBtnNext"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/llheight_settings"
+        android:layout_margin="@dimen/txtsize_15dp"
+        android:layout_weight="0.0"
+        android:background="@color/latest_orange"
+        android:drawableLeft="@drawable/arrow_booking_small"
+        android:drawablePadding="@dimen/margin_left5"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/imageleft150dp"
+        android:text="@string/nextbtn"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/myImgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/myLayoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/myfinalLayoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/subImgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/serviceArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/serviceColorTempTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/serviceArrayTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

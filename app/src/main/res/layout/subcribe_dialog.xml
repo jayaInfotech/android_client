@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cancelBtn"
+            android:layout_marginTop="@dimen/llheight_settings"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewSubcribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txtsize_setting20dp"
+                android:layout_marginRight="@dimen/txtsize_setting20dp"
+                android:gravity="center"
+                android:text="To Add more Services please\nsubcribe for just $5"
+                android:textSize="@dimen/txtsize_setting20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings40dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/booking_130dp"
+                android:layout_height="fill_parent"
+                android:background="@color/latest_orange"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnSubcribe"
+                android:layout_width="@dimen/booking_130dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_left5"
+                android:background="@color/latest_green"
+                android:text="Subscribe" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/txtsize14dp"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

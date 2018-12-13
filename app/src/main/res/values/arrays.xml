@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/calendar</item>
+        <item>@drawable/notification</item>
+        <item>@drawable/fav</item>
+        <item>@drawable/setting</item>
+        <item>@drawable/share</item>
+        <item>@drawable/mailicon</item>
+        <item>@drawable/logout</item>
+    </array>
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Bookings</item>
+        <item>Notifications</item>
+        <item>Favourites</item>
+        <item>Settings</item>
+        <item>Share</item>
+        <item>Contact</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tueday</item>
+        <item>Wednesday</item>
+        <item>Thursay</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>

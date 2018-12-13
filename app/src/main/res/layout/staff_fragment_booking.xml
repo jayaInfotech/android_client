@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/blankBookingStaff"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/txtsize_setting20dp"
+                android:layout_height="@dimen/txtsize_setting20dp"
+                android:background="@drawable/calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:padding="10.0dip"
+                android:text="@string/blankBooking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_setting20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bookingDataLayoutStaff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/llheight_settings40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@drawable/round_border_buttun"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:id="@+id/staffBtnConfirm"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bookingConfirmCountStaff"
+                        android:layout_width="@dimen/llheight_25dp"
+                        android:layout_height="@dimen/llheight_25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle"
+                        android:gravity="center"
+                        android:textSize="@dimen/txtsize14dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/textConfirmed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="3.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/confirmed"
+                        android:textSize="@dimen/txtsize_15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:background="@drawable/round_border_buttun"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:id="@+id/staffBtnAwaiting"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bookingAwaitingCountStaff"
+                        android:layout_width="@dimen/llheight_25dp"
+                        android:layout_height="@dimen/llheight_25dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle"
+                        android:gravity="center"
+                        android:textSize="@dimen/txtsize14dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/textAwt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="3.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/awaitning"
+                        android:textSize="@dimen/txtsize_15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/staffTxtVisibleConfirm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/staffTxtVisibleAwait"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ScrollView
+                    android:id="@+id/scrollTest1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/blankBookingLayoutConfirmed"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:tint="@color/colorPrimaryDarkToo"
+                                android:layout_width="@dimen/txtsize_setting20dp"
+                                android:layout_height="@dimen/txtsize_setting20dp"
+                                android:src="@drawable/calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:padding="@dimen/leftmargin_imgview"
+                                android:text="@string/confirmblankBooking"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/txtsize14dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/staffLayoutConfirmed"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+                <ScrollView
+                    android:id="@+id/scrollTestgf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/blankBookingLayoutReceived"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:tint="@color/colorPrimaryDarkToo"
+                                android:layout_width="@dimen/txtsize_setting20dp"
+                                android:layout_height="@dimen/txtsize_setting20dp"
+                                android:src="@drawable/calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:padding="@dimen/leftmargin_imgview"
+                                android:text="@string/blankBooking"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/txtsize14dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/staffLayoutAwaiting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            />
+                    </LinearLayout>
+
+                </ScrollView>
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

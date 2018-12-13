@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_sett30dp"
+            android:layout_marginBottom="@dimen/txtsize13dp"
+            android:layout_marginTop="@dimen/txtsize13dp"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add your service details"
+                android:textSize="@dimen/txtsize_setting20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings40dp"
+            android:layout_margin="@dimen/margin7dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rounded_border"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etServiceName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Service Name"
+                android:maxLength="40"
+                android:paddingLeft="@dimen/margin7dp"
+                android:textSize="@dimen/img_heightwidth16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin7dp"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/llheight_settings40dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spService"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/llheight_settings40dp"
+                        android:layout_marginBottom="@dimen/margintopbuttom3dp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@drawable/rounded_border"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtsize14dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/llheight_sett30dp"
+                        android:src="@drawable/dw_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtsymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etServicCost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/margin7dp"
+                    android:background="@drawable/rounded_border"
+                    android:gravity="center_vertical"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingLeft="@dimen/llmargin_top_buttom"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtsize_15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight70dp"
+            android:layout_margin="@dimen/margin7dp"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etServicDescript"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/rounded_border"
+                android:gravity="center|left|top"
+                android:hint="Description"
+                android:maxLength="80"
+                android:paddingLeft="@dimen/margin7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtsize_15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings40dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btnCancelSer"
+                android:layout_width="@dimen/cancelBtn"
+                android:layout_height="fill_parent"
+                android:background="@drawable/round_border_buttun_red"
+                android:text="Cancel" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btnDoneSer"
+                android:layout_width="@dimen/cancelBtn"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/txtsize_setting20dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/save" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btnDeleteSer"
+                android:layout_width="@dimen/img_height190dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/margin7dp"
+                android:background="@drawable/round_border_buttun_red"
+                android:text="@string/delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/txtsize14dp"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

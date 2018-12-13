@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "945163166226",
+    "firebase_url": "https://bestspa-225012.firebaseio.com",
+    "project_id": "bestspa-225012",
+    "storage_bucket": "bestspa-225012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945163166226:android:2e8c72d7052770a2",
+        "android_client_info": {
+          "package_name": "com.bestspa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945163166226-6dd5atosghgent2rtvff8nekgvoicqnn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bestspa",
+            "certificate_hash": "731aa0a57ab339457d4b78ab62a8009075a45efa"
+          }
+        },
+        {
+          "client_id": "945163166226-ijcofbh2v8joarbvg5mg323qda380mg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH_Xz7TLI4xz1xPY8PP8b2KwFigUR7IV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945163166226-ijcofbh2v8joarbvg5mg323qda380mg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

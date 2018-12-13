@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/llheight_settings40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/subServiceLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/llheight_settings40dp"
+            android:layout_weight="7.0"
+            android:background="#ff726f70"
+            android:orientation="horizontal"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.7"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/subserviceId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/subserviceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margintopbuttom3dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/rightmarginimage15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtTimePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="price"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/rightmarginimage15dp" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/subserviceCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dip"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
